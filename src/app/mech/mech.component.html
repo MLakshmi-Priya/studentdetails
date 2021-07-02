@@ -1,0 +1,26 @@
+<h2>MECH STUDENTS DETAILS</h2>
+  <div>
+    <table class="student-Listing">
+      <thead>
+        <tr><div>
+          <th>Checkbox</th>
+        </div>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Branch</th>
+          <th>Gpa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <th><input type="checkbox" name="myData" [(ngModel)]="isChecked"></th>
+          <th>{{student.id}}</th>
+          <td>{{student.name}}</td>
+          <td>{{student.branch}}</td>
+          <td>{{student.gpa}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
