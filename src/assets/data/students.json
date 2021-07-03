@@ -1,0 +1,6 @@
+[
+  {"name":"Priya", "id": 512, "branch": "CSE", "gpa":7.7},
+  {"name": "Pallavi", "id":517, "branch": "CSE", "gpa":8.1 },
+  {"name": "Sowmya", "id":532, "branch":"CSE", "gpa":8.1},
+  {"name": "Karthik", "id": 513, "branch":"CSE", "gpa": 8.2}
+]

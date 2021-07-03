@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+nav{
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+nav ul{
+  padding: 0 !important;
+  background: #0288d1;
+  display: flex;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
+  border-radius: 2px;
+  margin-top: 0;
+}
+
+nav li{
+  flex-basis: 0;
+  flex-grow: 1;
+  list-style-type: none;
+}
+nav a{
+  text-align: center;
+  padding: 16px 0;
+  color: #eee;
+  display: block;
+  text-decoration: none;
+}
+
+nav a:hover{
+  background: #1298e1;
+}
+
+.student-Listing table{
+  border-collapse: collapse;
+   margin: 25px 0;
+   font-size: 0.9em;
+   font-family: sans-serif;
+   min-width: 400px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.student-Listing thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.student-Listing th,
+.student-Listing td {
+    padding: 12px 15px;
+}
+
+
+.student-Listing tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+.student-Listing tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.student-Listing tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

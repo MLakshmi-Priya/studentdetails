@@ -1,18 +1,48 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { DatalistService } from './datalist.service';
+import  { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule,routinComponet } from './app-routing.module';
 import { AppComponent } from './app.component';
+import{ HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { EeeComponent } from './eee/eee.component';
+import { MechComponent } from './mech/mech.component';
+import { DetailsComponent } from './details/details.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routinComponet,
+    EeeComponent,
+    MechComponent,
+    DetailsComponent,
+    LoginComponent,
+    RegisterComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    BrowserAnimationsModule,
+    RouterModule
   ],
-  providers: [],
+  providers: [DatalistService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

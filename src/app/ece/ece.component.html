@@ -1,0 +1,26 @@
+<h2>ECE STUDENTS DETAILS</h2>
+
+
+<header>
+  <div>
+    <table class="student-Listing">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Branch</th>
+          <th>Gpa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <th>{{student.id}}</th>
+          <td>{{student.name}}</td>
+          <td>{{student.branch}}</td>
+          <td>{{student.gpa}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </header>
